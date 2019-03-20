@@ -123,7 +123,7 @@ return [
 
     'repository'   => [
         'provider' => 'github',
-        'url'      => 'https://github.com/bluerocktel/docs-en.bluerocktel-billing.bluerocktel.com'
+        'url'      => 'https://github.com/bluerocktel/docs-fr-bluerocktel-billing.bluerocktel.com'
     ],
 
     /*
@@ -174,10 +174,10 @@ return [
 
     'seo'                 => [
         'author'          => 'BlueRockTEL',
-        'description'     => 'BlueRockTEL helps Telecom and Cloud companies billing efficiently and automatically their services.',
-        'keywords'        => 'bluerocktel, billing, cloud, telecom',
+        'description'     => 'BlueRockTEL Solution de facturation Telecom : documentation en français',
+        'keywords'        => 'bluerocktel, billing, cloud, telecom, solution, facturation',
         'og'              => [
-            'title'       => 'BlueRockTEL Telecom and Cloud Billing',
+            'title'       => 'BlueRockTEL Solution de facturation Telecom et Cloud',
             'type'        => 'article',
             'url'         => '',
             'image'       => '',
