@@ -1,0 +1,4 @@
+- ## Débuter
+    - [BlueRockTEL](/docs/{{version}}/bluerocktel)
+- ## Suivis d'installation
+    - [Emails types](/docs/{{version}}/emailTemplates)
