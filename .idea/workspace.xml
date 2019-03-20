@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b504952-67ad-4e72-91b1-788bbf6aca5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/larecipe.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/larecipe.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -66,11 +64,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="larecipe.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="larecipe.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/larecipe.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="820">
               <caret line="179" column="82" selection-start-line="179" selection-start-column="82" selection-end-line="179" selection-end-column="82" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="312">
+                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -106,6 +116,7 @@
         <option value="$PROJECT_DIR$/resources/docs/1.0/emailTemplates.md" />
         <option value="$PROJECT_DIR$/resources/docs/1.0/index.md" />
         <option value="$PROJECT_DIR$/config/larecipe.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -228,30 +239,6 @@
               <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="docs" type="462c0819:PsiDirectoryNode" />
-              <item name="1.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -296,12 +283,12 @@
       <workItem from="1552829790443" duration="322000" />
       <workItem from="1552830206130" duration="607000" />
       <workItem from="1552849196649" duration="2578000" />
-      <workItem from="1553110024608" duration="6202000" />
+      <workItem from="1553110024608" duration="6666000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10877000" />
+    <option name="totallyTimeSpent" value="11341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="318" y="-1339" width="1578" height="1313" extended-state="0" />
@@ -688,8 +675,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/larecipe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
+        <state relative-caret-position="820">
           <caret line="179" column="82" selection-start-line="179" selection-start-column="82" selection-end-line="179" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="312">
+            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
