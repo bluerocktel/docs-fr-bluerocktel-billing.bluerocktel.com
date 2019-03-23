@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b504952-67ad-4e72-91b1-788bbf6aca5a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/docs/1.0/dossierFacturation.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/docs/1.0/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/docs/1.0/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/docs/1.0/emailTemplates.md" beforeDir="false" afterPath="$PROJECT_DIR$/resources/docs/1.0/emailTemplates.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,36 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bluerocktel.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/docs/1.0/bluerocktel.md">
+      <file leaf-file-name="emailTemplates.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/docs/1.0/emailTemplates.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="520">
-                <caret line="11" selection-start-line="11" selection-end-line="11" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/docs/1.0/index.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="104">
-                <caret line="4" column="54" lean-forward="true" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dossierFacturation.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/docs/1.0/dossierFacturation.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="1064">
-                <caret line="30" column="132" selection-start-line="30" selection-start-column="132" selection-end-line="30" selection-end-column="132" />
+              <first_editor relative-caret-position="429">
+                <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -72,12 +47,12 @@
         <option value="$PROJECT_DIR$/resources/docs/1.0/introduction.md" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/docs/1.0/overview.md" />
-        <option value="$PROJECT_DIR$/resources/docs/1.0/emailTemplates.md" />
         <option value="$PROJECT_DIR$/config/larecipe.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/resources/docs/1.0/bluerocktel.md" />
         <option value="$PROJECT_DIR$/resources/docs/1.0/dossierFacturation.md" />
         <option value="$PROJECT_DIR$/resources/docs/1.0/index.md" />
+        <option value="$PROJECT_DIR$/resources/docs/1.0/emailTemplates.md" />
       </list>
     </option>
   </component>
@@ -177,10 +152,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="543" />
-    <option name="y" value="-1331" />
+    <option name="x" value="85" />
+    <option name="y" value="23" />
     <option name="width" value="1180" />
-    <option name="height" value="1313" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -197,6 +172,11 @@
             <path>
               <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="docs-fr-bluerocktel-billing.bluerocktel.com" type="b2602c69:ProjectViewProjectNode" />
@@ -261,15 +241,15 @@
       <workItem from="1552849196649" duration="2578000" />
       <workItem from="1553110024608" duration="8122000" />
       <workItem from="1553121512847" duration="1385000" />
-      <workItem from="1553122962746" duration="168000" />
+      <workItem from="1553122962746" duration="3875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14350000" />
+    <option name="totallyTimeSpent" value="18057000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="543" y="-1331" width="1180" height="1313" extended-state="0" />
+    <frame x="85" y="23" width="1180" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -565,13 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/larecipe.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="173" lean-forward="true" selection-start-line="173" selection-end-line="173" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/docs/1.0/introduction.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -582,30 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/docs/1.0/emailTemplates.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="494">
-            <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/docs/1.0/bluerocktel.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="520">
-            <caret line="11" selection-start-line="11" selection-end-line="11" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -622,8 +575,35 @@
     <entry file="file://$PROJECT_DIR$/resources/docs/1.0/index.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="104">
-            <caret line="4" column="54" lean-forward="true" selection-start-line="4" selection-start-column="54" selection-end-line="4" selection-end-column="54" />
+          <first_editor relative-caret-position="130">
+            <caret line="5" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/larecipe.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/docs/1.0/bluerocktel.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="520">
+            <caret line="11" selection-start-line="11" selection-end-line="11" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/docs/1.0/emailTemplates.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="429">
+            <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>

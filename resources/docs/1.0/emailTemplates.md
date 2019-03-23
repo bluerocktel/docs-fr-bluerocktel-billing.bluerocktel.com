@@ -1,107 +1,114 @@
-# BlueRockTEL
----
+Les emails types de [BlueRockTEL](https://fr.bluerocktel.com) sont des modèles d'emails que vous pouvez appeler depuis vos installations types. Un cas courant : le fait de renseigner la date de portabilité du dossier envoie automatiquement un email d'information au client.
 
-# Emails types
+## Création des emails types et insertion de variables
 
-BlueRockTEL vous permet de configurer des emails types, qui seront ensuite intégrés à vos suivis d'installation.
+Vous pourrez accéder aux emails types depuis le menu "Configuration / Emails types". Depuis l'index, vous pouvez créer un nouvel email type, éditer ou supprimer un modèle existant. Il est également possible de dupliquer un email type, ce qui permet de gagner du temps de configuration.
 
-## Variables disponibles
+![Emails types BlueRockTEL : vue générale](http://assets.bluerocktel.net/images/emailTemplates-index-fr.png)
 
-Dans vos modèles types, vous pouvez utiliser des variables des modèles **suivi d'installation (customerFileSetup)**, **dossier de facturation (customerFile)** et **client (customer)**.
+Outre le texte de l'email type, vous devrez configurer les destinataires, à la fois dans votre entreprise et dans l'entreprise cliente. Dans votre entreprise, il peut s'agir du technicien, du commercial ou de l'ADV en charge du dossier, mais également du manager de facturation ou du manager technique. Dans l'entreprise cliente, il peut s'agir des destinataires des factures, des contacts techniques ou des signataires du contrat.
 
-Pour accéder à une variable à l'intérieur d'un modèle, la syntaxe à utiliser est de type :
+![Emails types BlueRockTEL : détail](http://assets.bluerocktel.net/images/emailTemplates-edit2-fr.png)
 
-```
-{ { $model->variable } } 
-```
+Pour personnaliser vos emails types, vous pouvez insérer des variables provenant des modèles :   
+* Client (customer)
+* Dossier de Facturation (customerFile)
+* Suivi d'installation (customerFileSetup)
+* Organisation (organisation)
 
-Par exemple, pour afficher la variable 'site' du modèle 'customerFile', vous devrez écrire ;
-
-```
- { { $customerFile->site } } 
-```
-
-Une particularité concernant les dates, vous pourrez les formater de la façon qui vous convient, par exemple : 
+Pour appeler une variable d'un modèle, la syntaxe à utiliser est de type:
 
 ```
-{ { $customerFileSetup->portabilityDate } } 
+{ { $model->variable } }
+``` 
+
+Par exemple, pour appeler la variable 'site' du modèle 'customerFile', vous écrirez dans votre email type : 
+
+```
+{ { $customerFile->site } }
+``` 
+
+Vous pourrez formater les dates de la façon qui vous convient le mieux, par exemple :
+
+```
+Nous vous confirmons votre date de portabilité le { { $customerFileSetup->portabilityDate->format('d/m/Y') } }
 ```
 
-### Suivi d'installation (customerFileSetup)
+ou, si vous voulez indiquer le jour et l'heure :
 
-**requestedInstallationDate** : date d'installation demandée ou prévue
+```
+Nous vous confirmons votre date de portabilité le { { $customerFileSetup->portabilityDate->format('d/m/Y') } } à { { $customerFileSetup->portabilityDate->format('H:i') } }
+```
 
-**portabilityDate** : date de portabilité
+## Lexique des variables disponibles
 
-**deliveryDate** : date de livraison
+### Modèle "Client" (customer)
 
-**nextActionDate** : date de la prochaine action dans le process
+* **brand** : marque dont dépend votre client, si vous avez configuré plusieurs marques dans BlueRockTEL (branding)
+* **name** : raison sociale du client
+* **customerAccount** : compte client, par défaut de type "CL001"
+* **accountsReference** : compte client en comptabilité, si différente
+* **registrationNumber** : numéro d'identification de l'entreprise, SIRET en France
+* **taxRegistrationNumber** : numéro de TVA intracommunautaire
+* **mainContactFirstName** : prénom du contact principal de l'entreprise cliente
+* **mainContactLastName** : nom du contact principal
+* **type** : type d'entreprise
+* **capital** : capital de l'entreprise
+* **activityCode** : code activité
+* **mainAddressLine1** : première ligne de l'adresse postale
+* **mainAddressLine2** : seconde ligne de l'adresse
+* **mainAddressPostalCode** : code postal
+* **mainAddressCity** : ville
+* **mainAddressCountry** : pays
+* **emailAddress** : adresse email principale de l'entreprise
+* **website** : site web
+* **phone** : téléphone
+* **fax** : fax
 
-### Dossier de facturation (customerFile)
+### Modèle "Dossier de facturation" (customerFile)
 
-**site** : nom du site identifiant le dossier
+* **site** : site installé
+* **siteId** : un identifiant du site, le cas échéant, souvent une information provenant du client lui-même
+* **addressLine1** : première ligne de l'adresse postale du site
+* **addressLine2** : seconde ligne de l'adresse
+* **postalCode** : code postal
+* **city** : ville
+* **country** : pays
+* **mandateIdentification** : référence unique du mandat (RUM) sur lequel les prélèvements bancaires SEPA seront effectués
+* **mandateSignatureDate** : date de signature du mandat SEPA
+* **servicesStart** : date de début des services (au niveau du dossier, sachant que les services peuvent individuellement avoir des dates de début différentes)
+* **servicesStop** : date de fin des services (au niveau du dossier, sachant que les services peuvent individuellement avoir des dates de fin différentes)
+* **billingFrequency** : nombre de mois représentant la fréquence de facturation du dossier
+* **credit** : solde créditeur du dossier client
 
-**siteId** : identifiant du site (par exemple un code ayant une signification pour votre client)
+### Modèle "Suivi d'installation" (customerFileSetup)
 
-**addressLine1** : première ligne d'adresse du site
+* **requestedInstallationDate** : date d'installation demandée puis prévue
+* **portabilityDate** : date de portabilité
+* **deliveryDate** : date de livraison
 
-**addressLine2** : seconde ligne d'adresse du site
+### Modèle "Organisation" (organisation)
 
-**postalCode** : code postal
-
-**city** : ville
-
-**country** : pays
-
-**mandateIdentification** : référence du mandat de prélèvement bancaire mis en place au niveau du dossier
-
-**mandateSignatureDate** : date de signature du mandat de prélèvement
-
-**servicesStart** : date de début des services (au niveau du dossier, sachant que les services peuvent individuellement avoir des dates de début différentes)
-
-**servicesStop** : date de fin des services (au niveau du dossier, sachant que les services peuvent individuellement avoir des dates de fin différentes)
-
-**billingFrequency** : fréquence de facturation (nombre entier représentant le nombre de mois entre 2 factures)
-
-**credit** : solde créditeur du dossier client
-
-### Client (customer)
-
-**brand** : si vous gérez plusieurs marques dans l'application, la marque dont dépend votre client,
-
-**customerAccount** : le compte client
-
-**accountsReference** : le compte comptable
-
-**registrationNumber** : le numéro d'identification de l'entreprise cliente (SIRET en France)
-
-**taxRegistrationNumber** : le numéro de TVA intracommunautaire de l'entreprise cliente
-
-**mainContactFirstName** : le prénom du contact principal de l'entreprise cliente,
-
-**mainContactLastName** : le nom du contact principal de l'entreprise cliente,
-
-**type** : le type d'entreprise
-
-**capital** : le capital de l'entreprise
-
-**activityCode** : le code d'activité de l'entreprise cliente (NAF ou APE en France)
-
-**mainAddressLine1** : première ligne d'adresse
-
-**mainAddressLine2** : seconde ligne d'adresse
-
-**mainAddressPostalCode** : code postal
-
-**mainAddressCity** : ville
-
-**mainAddressCountry** : pays
-
-**emailAddress** : adresse email principale de l'entreprise
-
-**website** : adresse du site Web de l'entreprise
-
-**phone** : numéro de téléphone principal de l'entreprise
-
-**fax** : numéro de fax
+* **name** : raison sociale
+* **registrationNumber** : numéro d'identification de votre entreprise, SIRET en France
+* **taxRegistrationNumber** : numéro de TVA intracommunautaire
+* **mainContactFirstName** : prénom du contact principal
+* **mainContactLastName** : nom du contact principal
+* **accountantFirstName** : prénom du comptable
+* **accountantLastName** : nom du comptable
+* **organisationType** : type d'organisation
+* **currency** : devise principale
+* **capital** : capital de l'entreprise
+* **activityCode** : code activité
+* **iban** : votre IBAN
+* **bic** : votre BIC
+* **ics** : votre identifiant de créancier SEPA
+* **mainAddressLine1** : première ligne de votre adresse postale
+* **mainAddressLine2** : seconde ligne d'adresse
+* **mainAddressPostalCode** : code postal
+* **mainAddressCity** : ville
+* **mainAddressCountry** : pays
+* **website** : site web
+* **phone** : téléphone principal de l'entreprise
+* **fax** : fax
 
